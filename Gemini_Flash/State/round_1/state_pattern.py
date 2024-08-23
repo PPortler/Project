@@ -1,5 +1,3 @@
-#Gemini_Flash coding test in the same file
-
 from abc import ABC, abstractmethod
 
 class State(ABC):
@@ -90,6 +88,7 @@ class State2(TestState):
 class State3(TestState):
     next_state = State1
 
+# Test functions in a separate file test_state.py
 def test_state_machine_on_off():
     context = Context()
     context.state = OffState()
